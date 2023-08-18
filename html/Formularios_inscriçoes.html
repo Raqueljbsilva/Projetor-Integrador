@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Doação de Sangue</title>
+</head>
+<body>
+    <h1>Formulário de Doação de Sangue</h1>
+    <form action="processar_doacao.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome" required><br><br>
+
+        <label for="data de nascimento">Data de Nascimento:</label>
+        <input type="date" required><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="tipo_sanguineo">Tipo Sanguíneo:</label>
+        <select id="tipo_sanguineo" name="tipo_sanguineo" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select><br><br>
+
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado" required>
+            <option value="MG">MG</option>
+            <option value="DF">DF</option>
+            <option value="MT">MT</option>
+            <option value="RS">RS</option>
+        </select><br><br>
+        <label for="cidade">Cidade</label>
+        <select id="cidade" name="Cidade" required>
+        </select><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
