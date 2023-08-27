@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HemoBlog: Gotas de Vida</title>
+    <link rel="stylesheet" href="./styles/home.css">
 </head>
 
 <body>
@@ -13,18 +14,20 @@
     <!-- Cabeçalho -->
     <header>
         <nav>
-            <a href="./index.html"><img src="./imagens/LOGO - GOTAS DE VIDA.png" alt="Logo" width="15%"></a>
-            <a href="./index.html"> Home</a> |
-            <a href="./html/Artigos_sbre_doação.html">Artigos</a> |
-            <a href="./html/PERGUNTAS_FREQUENTES.html">Dúvidas</a>|
-            <a href="./html/Formularios_inscriçoes.html"> Registro</a> |
+            <a href="./index.html"><img src="./imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
+            <ul>
+                <li><a href="./index.html"> Home</a></li>
+                <li><a href="./html/Artigos_sbre_doação.html">Artigos</a></li>
+                <li><a href="./html/PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
+                <li><a href="./html/Formularios_inscriçoes.html"> Registro</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
 
         <!-- Banner com imagens -->
-        <img src="./imagens/banner1.png" alt="Imagem sobre a Doação de Sangue" width="60%">
+        <img class="banner1" src="./imagens/banner1.png" alt="Imagem sobre a Doação de Sangue">
 
         <!-- Artigos -->
         <section>
@@ -70,16 +73,25 @@
         </article>
 
     </main>
-    <hr>
     <!-- Rodapé -->
     <footer>
-        <div>
-            <p>Quem Somos</p>
-            <p>Fale Conosco</p>
-            <p>Redes Sociais</p>
-            <p>Missão</p>
+        <div class="rodape">
+            <div>
+                <p>Quem Somos</p>
+                <p>Fale Conosco</p>
+            </div>
+            <div>
+                <p>Redes Sociais</p>
+                <p>Missão</p>
+            </div>
+            <div>
+                <p>Text1</p>
+                <p>Text2</p>
+            </div>
         </div>
-        <p>Todos os direitos reservados</p>
+        <div class="direitos">
+            <p>Todos os direitos reservados</p>
+        </div>
     </footer>
 
 </body>
