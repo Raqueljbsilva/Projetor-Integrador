@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HemoBlog: Gotas de Vida</title>
     <link rel="stylesheet" href="./styles/home.css">
+    <script src="https://kit.fontawesome.com/4fca10f768.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,54 +27,95 @@
 
     <main>
 
-        <!-- Banner com imagens -->
         <img class="banner1" src="./imagens/banner1.png" alt="Imagem sobre a Doação de Sangue">
+        <section id="artigos">
+            <h1>Artigos</h1>
+            <hr>
+            <div class="artigos">
+                <div class="artigo">
+                    <img class="imagem-artigo" src="./imagens/Por que doar sangue.jpg"
+                        alt="Imagem pessoa doando sangue">
+                    <h2>Por que doar Sangue?</h2>
+                    <p>Conheça alguns dos benefícios da doação de sangue que podem ajudá-lo a reconsiderar a doação
+                    </p>
+                    <div class="data-e-botao">
+                        <i class="fa-regular fa-calendar-days"><time datetime="2023-09-01">01/09/2023</time></i>
+                        <a href="./html/artigo_completo.html">Leia artigo completo</a>
+                    </div>
+                </div>
 
-        <!-- Artigos -->
-        <section>
-            <h1>Artigos sobre Doação de Sangue</h1>
-            <div>
-                <a href="./html/artigo_completo.html"><img src="./imagens/Por que doar sangue.jpg"
-                        alt="Imagem pessoa doando sangue" width="20%"></a>
-                <h2>Por que doar Sangue?</h2>
+                <div class="artigo">
+                    <img class="imagem-artigo" src="./imagens/Desmistificando mitos.jpg" alt="Desmistificando Mitos">
+                    <h2>Desmistificando mitos</h2>
+                    <p>Esses são alguns dos mitos que temos que desfazer com mais frequência</p>
+                    <div class="data-e-botao">
+                        <i class="fa-regular fa-calendar-days"><time datetime="2023-09-01">01/09/2023</time></i>
+                        <a href="./html/artigo_completo.html">Leia artigo completo</a>
+                    </div>
+                </div>
+
+                <div class="artigo">
+                    <img class="imagem-artigo" src="./imagens/Dicas para o dia da doação.jpg"
+                        alt="Dicas para o dia da doação">
+                    <h2>Dicas para o dia da doação</h2>
+                    <p>Saiba mais sobre as recomendações antes, durante e depois da doação de sangue</p>
+                    <div class="data-e-botao">
+                        <i class="fa-regular fa-calendar-days"><time datetime="2023-09-01">01/09/2023</time></i>
+                        <a href="./html/artigo_completo.html">Leia artigo completo</a>
+                    </div>
+                </div>
+
+                <div class="artigo">
+                    <img class="imagem-artigo" src="./imagens/Tres coracoes.jpg" alt="Três corações">
+                    <h2>Você sabe por que seu sangue salva três vidas?</h2>
+                    <p>Conheça os três componentes básicos do sangue</p>
+                    <div class="data-e-botao">
+                        <i class="fa-regular fa-calendar-days"><time datetime="2023-09-01">01/09/2023</time></i>
+                        <a href="./html/artigo_completo.html">Leia artigo completo</a>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <img src="./imagens/calendario.jpg" alt="Calendario de Doação de Sangue" width="20%">
-                <h2>Calendario de Doação de Sangue</h2>
-            </div>
-
-            <div>
-                <img src="./imagens/Dicas para o dia da doação.jpg" alt="Dicas para o dia da doação" width="20%">
-                <h2>Dicas para o dia da doação</h2>
-            </div>
-
-            <button> <a href="./html/Artigos_sbre_doação.html">Ver todos</a> </button>
-
+            <a class="ver-todos" href="./html/Artigos_sbre_doação.html">Ver todos os artigos</a>
         </section>
 
-        <!-- Convite a Registrar -->
-        <section>
-            <h2>Quer ser um doador de sangue</h2>
-            <button><a href="./html/Formularios_inscriçoes.html">Formulário de Registro</a></button>
-        </section>
-
-        <!-- Convidar um amigo -->
-        <section>
-            <p>Você nao pode doar sangue?</p>
-            <img src="./imagens/frame.png" alt="QR code" width="10%">
-            <p>Quer convidar um amigo?</p>
-        </section>
-
-        <article>
+        <section id="depoimentos">
             <h3>Depoimentos e agradecimentos</h3>
-            <p>Depoimento 1</p>
-            <p>Depoimento 2</p>
-            <p>Depoimento 3</p>
-        </article>
+            <div>
+                <img src="./imagens/avatar1.jpg" alt="Foto de uma mulher">
+                <i class="fa-solid fa-quote-left icone-esquerdo"></i>
+                <div class="texto-depoimento">
+                    <p class="texto">"Minha experiência ao doar sangue foi incrível. Foi rápido, indolor e o pessoal do
+                        banco de sangue
+                        foi
+                        muito acolhedor. Saber que minha doação pode salvar vidas me faz sentir bem. Recomendo a todos
+                        que
+                        possam doar sangue a fazerem isso. É uma pequena ação que pode fazer uma grande diferença."</p>
+                    <p>Ana Silva</p>
+                </div>
+                <i class="fa-solid fa-quote-right icone-direito"></i>
+            </div>
+            <div id="icones-slider">
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+            </div>
+
+            <!-- <p>Depoimento 2</p>
+            <p>Depoimento 3</p> -->
+        </section>
+
+        <section class="registro">
+            <div>
+                <h2>Quer ser um doador de sangue</h2>
+                <a href="./html/Formularios_inscriçoes.html">Formulário de Registro</a>
+            </div>
+            <img src="./imagens/imagen-registro.png" alt="">
+        </section>
 
     </main>
-    <!-- Rodapé -->
+
     <footer>
         <div class="rodape">
             <div>
