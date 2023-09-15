@@ -5,6 +5,7 @@
     <!-- utf8 é um conjunto de caractere que suporta acentuação -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/duvidas.css">
     <!-- Nome do site -->
     <title>HemoBlog: Gotas de Vida</title>
 </head>
@@ -12,54 +13,59 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../imagens/LOGO - GOTAS DE VIDA.png" alt="Logo" width="15%"></a>
-            <a href="../index.html"> Home</a> |
-            <a href="./Artigos_sbre_doação.html">Artigos</a> |
-            <a href="./PERGUNTAS_FREQUENTES.html">Dúvidas</a>|
-            <a href="./Formularios_inscriçoes.html"> Registro</a> |
+            <a href="../index.html"><img src="../imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./html/Artigos_sbre_doação.html">Artigos</a></li>
+                <li><a href="./html/PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
+                <li><a href="./html/Formularios_inscriçoes.html">Registro</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <div>
-            <h1>Perguntas Frequentes</h1>
-            <p></p>
-            <div>
+        <h1>Perguntas Frequentes</h1>
+        <div class="perguntas">
+            <!-- pergunta + resposta -->
+            <div class="pergunta">
+                <h3>O material para doar sangue é seguro?</h3>
+                <p>Sim. Os materiais utilizados são individuais, estéreis,
+                    descartásveis e o doador não corre risco de contrair doenças na doação de sangue.
+                </p>
+            </div>
 
-                <!-- pergunta + resposta -->
-                <details>
-                    <summary>Quem pode doar?</summary>
-                    Qualquer pessoa com idade entre 18 e 69 anos que pese mais de 50 quilos.
-                </details>
+            <div class="pergunta">
+                <h3>Quem pode doar?</h3>
+                <p>Qualquer pessoa com idade entre 18 e 69 anos que pese mais de 50 quilos. Jovens de 16 ou 17 anos
+                    também estão aptos, desde que tenham o consentimento dos pais ou dos responsáveis.
+                </p>
+            </div>
 
-                <div class="Pergunta 2">
-                    <h3>Pergunta 2</h3>
-                    <p>resposta 2</p>
-                </div>
-                <div class="Pergunta 3">
-                    <h3>Pergunta 3</h3>
-                    <p>resposta 3</p>
-                </div>
-                <div class="Pergunta 4">
-                    <h3>Pergunta 4</h3>
-                    <p>resposta 4</p>
-                </div>
-                <div class="Pergunta 5">
-                    <h3>Pergunta 5</h3>
-                    <p>resposta 5</p>
-                </div>
-                <div class="Pergunta 6">
-                    <h3>Pergunta 6</h3>
-                    <p>resposta 6</p>
-                </div>
-                <!-- tag br p/ quebra de linha -->
-                <br>
-                <h2>Envie sua Dúvida</h2>
-                <br>
-                <input>
-                <button>Enviar</button>
-                <br>
-                <br>
+            <div class="pergunta">
+                <h3>O que é feito com o sangue que doamos?</h3>
+                <p>resposta 3</p>
+            </div>
+
+            <div class="pergunta">
+                <h3>Quanto tempo leva para o organismo repor o sangue doado?</h3>
+                <p>resposta 4</p>
+            </div>
+
+            <div class="pergunta">
+                <h3>Quanto tempo demora?</h3>
+                <p>resposta 5</p>
+            </div>
+
+            <div class="pergunta">
+                <h3>O preocedimento oferece algum perigo?</h3>
+                <p>resposta 6</p>
+            </div>
+
+            <div class="pergunta">
+                <h3>Quanto sangue é retirado?</h3>
+                <p>resposta 7</p>
+            </div>
+        </div>
     </main>
     <hr>
     <!-- Rodapé -->
