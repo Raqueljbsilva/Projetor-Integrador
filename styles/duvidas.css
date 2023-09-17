@@ -17,7 +17,7 @@ header {
     top: 0;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     padding: 0px 1em;
@@ -29,28 +29,28 @@ header nav a img {
     align-items: center;
 }
 
-ul {
+header ul {
     display: flex;
     list-style: none;
     font-size: 20px;
     align-items: center;
 }
 
-li {
+header li {
     margin-left: 2em;
 }
 
-ul li a:hover {
+header ul li a:hover {
     font-weight: 600;
 }
 
-a {
+header a {
     color: #BF1B2C;
     text-decoration: none;
 }
 /*BODY*/
 
-h1 {
+main h1 {
     text-align: center;
     margin-top: 16px;
     margin-bottom: 32px;
@@ -70,25 +70,83 @@ h1 {
     
 }
 
-.pergunta p {
-
-}
-
 /*FOOTER*/
 footer {
     background-color:#BF1B2C;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 2em;
 }
 
-.rodape {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    color: white;
-} 
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
 
+footer h1 {
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+footer li {
+    margin-top: 8px;
+}
+
+.navegacao {
+    grid-row: span 2;
+    align-content: start;
+}
+
+.sobre {
+    grid-row: span 1;
+}
+
+.social {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.social ul{
+    grid-column: 2;
+    align-content: start;
+    display: flex;
+    gap: 24px;
+}
+
+.social li {
+    flex-wrap: wrap;
+}
+
+.qr-code {
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.qr-code img {
+    width: 40%;
+}
+
+.qr-code h3 {
+    color: #fff;
+}
 .direitos {
     text-align: center;
-    font-weight: 600;
+    padding: 8px;
+    background-color: #fff;
 }
