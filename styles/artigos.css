@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(250, 241, 247);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+nav {
+    color: #cd3636;
+    display: flex;
+    justify-content: space-between;
+}
+header nav a img {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+uul {
+    
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  flex-direction:center;
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    align-items: center;
+}
+
+li {
+    margin-left: 1em;
+}
+
+
+a {
+    color: #BF1B2C;
+    text-decoration: none;
+    align-items: center;
+}
+
+.banner1 {
+    height: 35vw;
+    width: 99vw;
+    
+}
+
+
+ul{
+    color: #cd3636;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction:inherit;
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    align-items:flex-end;
+}
+
+h1{
+    color: #cd3636;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction:initial;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    
+
+}
+
+
+h1 {
+    margin: 0% 0% 0%;
+    font-size: 100%;
+    color: #545454
+}
+
+
+
+
+.artigo {
+    width: 100vw;
+    padding:0;
+    margin:0%;
+    color: #545454
+}
+
+.artigo {
+    display:flex;
+     background-color:rgb(187, 160, 160);;
+    flex-direction:column;
+    border-style:outset;
+    border-radius: 30px;
+    width: 480px;
+    height: 500px;
+    margin: 2%;
+    font-size: 100%;
+    
+
+}
+
+.imagem-artigo {
+    width: 100%;
+}
+
+
+h3{
+    color: #cd3636;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction:inherit;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    align-items: center;
+}
+
+div {
+    font-style: italic;
+    text-decoration:none;
+    flex-direction:inherit;
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    align-items:center;
+    padding: 1em;
+    
+    
+}
+
+main nav{
+    color: #a82936;
+    text-decoration: none;
+    background-color: rgb(250, 241, 247);                  
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 50;
+    top: 0;
+}
+
+ .div-slider{
+ width: auto;
+ height: 50%;
+ text-align:center;
+ }
+ .slides-front {
+     padding: 1px;
+     width:2000px; 
+     height: 600px;
+     display: flex;
+     margin: auto;
+     position:relative;
+ }
+ 
+ .slides-front * {
+     user-select: none;
+     -ms-user-select: none;
+     -moz-user-select: none;
+     -khtml-user-select: none;
+     -webkit-user-select: none;
+     -webkit-touch-callout: none;
+ }
+ 
+ .slides-front input { display: none; }
+ 
+ .slide-container { display: block; }
+ 
+ .slide {
+     top: 2%;
+     opacity: 0;
+     width: 1080px;
+     height: 470px;
+     left: 0;
+     display:flex;
+     position: absolute;
+     transition: all .7s ease-in-out 0.1s;
+ }
+ div video{
+    
+    -ms-text-combine-horizontal: center;
+    padding:0;
+    right: 10em;
+    left: 10em;
+    height:570px;
+    width:890px;
+ }
+    
+        
+
+ .slide img {
+    width: 100%;
+    height: 100%;
+}
+
+ .nav label {
+     width: 500px;
+     height: 100%;
+     display: none;
+     position: absolute;
+     opacity: 0;
+     z-index: 9;
+     cursor: pointer;
+     transition: opacity .2s;
+     color: #f4eded;
+     font-size: 10pt;
+     text-align: center;
+     line-height: 200px;
+     font-family: "Varela Round", sans-serif;
+     background-color: rgba(255, 255, 255, .3);
+     text-shadow: 0px 0px 15px rgb(119, 119, 119);
+ }
+ 
+ .slide:hover + .nav label { opacity: 0.5; }
+ 
+ .nav label:hover { opacity: 1; }
+ 
+ .nav .next { right: 0; }
+ 
+ input:checked + .slide-container  .slide {
+     opacity: 1;
+ 
+     transform: scale(1);
+ 
+     transition: opacity 1s ease-in-out 0.1s;
+ }
+ 
+ input:checked + .slide-container .nav label { display: block; }
+ 
+ .nav-dots {
+     width: 2000%;
+     bottom: 100px;
+     height: 11px;
+     display: flex;
+     position: relative;
+     text-align:justify;
+ }
+ .nav-dots .nav-dot {
+    top: 50px;
+    width: 10px;
+    height: 9px;
+    margin: 3px;
+    left: 130px;
+    padding:0px;
+    position:relative;
+    border-radius: 100%;
+    background-color: rgba(1, 0, 0.6);
+
+ }
+ .nav-dots .nav-dot:hover {
+    
+     cursor: pointer;
+     background-color: rgba(300, 49, 49, 0.8);
+ }
+ 
+ /* rodape */
+
+footer{
+    background-color:#BF1B2C;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 200px;
+    
+}
+
+.container {
+    box-sizing:content-box;
+    max-width: 120px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+
+}
+
+.titulo-rodape, .qr-code h3 {
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.lista-rodape {
+    list-style: none;
+    font-size: 20px;
+}
+
+footer li {
+    margin-top: 8px;
+}
+
+.navegacao {
+    grid-row: span 2;
+    align-content: start;
+}
+
+.navegacao .lista-rodape, .sobre .lista-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.sobre {
+    grid-row: span 1;
+}
+
+.social {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.social .lista-rodape{
+    grid-column: 2;
+    align-content: start;
+    display: flex;
+    gap: 24px;
+}
+
+.social li {
+    flex-wrap: wrap;
+}
+
+.qr-code {
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.qr-code img {
+    width: 40%;
+}
+
+.direitos {
+    text-align: center;
+    padding: 8px;
+    background-color: #fff;
+    justify-content:center;
+}
