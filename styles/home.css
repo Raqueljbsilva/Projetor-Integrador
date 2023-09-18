@@ -34,7 +34,7 @@ ul {
     align-items: center;
 }
 
-li {
+.item {
     margin-left: 2em;
 }
 
@@ -60,7 +60,7 @@ a {
     margin-bottom: 3rem;
 }
 
-h1 {
+.titulo {
     margin: 1% 4% 0%;
     font-size: 200%;
     color: #545454
@@ -220,30 +220,82 @@ hr {
 footer {
     background-color:#BF1B2C;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 2em;
 }
 
-.rodape {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    color: white;
-} 
-
-/* footer {
-    background-color: rgb(250, 241, 247);
-    padding: 2em;
-
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
 }
 
-.rodape {
+.titulo-rodape, .qr-code h3 {
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.lista-rodape {
+    list-style: none;
+    font-size: 20px;
+}
+
+footer li {
+    margin-top: 8px;
+}
+
+.navegacao {
+    grid-row: span 2;
+    align-content: start;
+}
+
+.navegacao .lista-rodape, .sobre .lista-rodape{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    color: #BF1B2C;
-} */
+    flex-direction: column;
+    align-items: start;
+}
+
+.sobre {
+    grid-row: span 1;
+}
+
+.social {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.social .lista-rodape{
+    grid-column: 2;
+    align-content: start;
+    display: flex;
+    gap: 24px;
+}
+
+.social li {
+    flex-wrap: wrap;
+}
+
+.qr-code {
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.qr-code img {
+    width: 40%;
+}
 
 .direitos {
     text-align: center;
-    font-weight: 600;
+    padding: 8px;
+    background-color: #fff;
 }

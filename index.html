@@ -17,10 +17,10 @@
         <nav>
             <a href="./index.html"><img src="./imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./html/Artigos_sbre_doação.html">Artigos</a></li>
-                <li><a href="./html/PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
-                <li><a href="./html/Formularios_inscriçoes.html"> Registro</a></li>
+                <li class="item"><a href="./index.html">Home</a></li>
+                <li class="item"><a href="./html/Artigos_sbre_doação.html">Artigos</a></li>
+                <li class="item"><a href="./html/PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
+                <li class="item"><a href="./html/Formularios_inscriçoes.html"> Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +29,7 @@
 
         <img class="banner1" src="./imagens/banner1.png" alt="Imagem sobre a Doação de Sangue">
         <section id="artigos">
-            <h1>Artigos</h1>
+            <h1 id="titulo">Artigos</h1>
             <hr>
             <div class="artigos">
                 <div class="artigo">
@@ -117,22 +117,41 @@
     </main>
 
     <footer>
-        <div class="rodape">
-            <div>
-                <p>Quem Somos</p>
-                <p>Fale Conosco</p>
+        <div class="container">
+            <div class="navegacao">
+                <h1 class="titulo-rodape">Navegação</h1>
+                <ul class="lista-rodape">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Artigo</a></li>
+                   <li><a href="#">Dúvidas</a></li>
+                   <li><a href="#">Registro</a></li> 
+                </ul>
             </div>
-            <div>
-                <p>Redes Sociais</p>
-                <p>Missão</p>
+    
+            <div class="sobre">
+                <h1 class="titulo-rodape">Sobre-nós</h1>
+                <ul class="lista-rodape">
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Missão</a></li>
+                </ul>
             </div>
-            <div>
-                <p>Text1</p>
-                <p>Text2</p>
+    
+            <div class="social">
+                <h1 class="titulo-rodape">Redes Sociais</h1>
+                <ul class="lista-rodape">
+                    <li><a href="#"><img src="../imagens/social/icone-twitter.svg" alt="icone-twitter"></a></li>
+                    <li><a href="#"><img src="../imagens/social/icone-facebook.svg" alt="icone-facebook"></a></li>
+                    <li><a href="#"><img src="../imagens/social/icone-instagram.svg" alt="icone-instagram"></a></li>
+                </ul>
+            </div>
+    
+            <div class="qr-code">
+                <img src="../imagens/frame1.png" alt="qr-code">
+                <h3>Compartilhe nosso site</h3>
             </div>
         </div>
         <div class="direitos">
-            <p>Todos os direitos reservados</p>
+            <p>Todos os direitos reservados.</p>
         </div>
     </footer>
 
