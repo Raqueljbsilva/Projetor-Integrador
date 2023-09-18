@@ -34,7 +34,7 @@ ul {
     align-items: center;
 }
 
-li {
+.itens {
     margin-left: 2em;
 }
 
@@ -58,7 +58,7 @@ a {
     padding: 0;
 }
 
-h1 {
+.titulo {
     text-align: center;
     background-color: #d9534f;
     color: #fff;
@@ -68,7 +68,8 @@ h1 {
 
 form {
     width: 400px;
-    margin: 30px 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 20px;
     background-color: #fff;
     border-radius: 25px;
@@ -103,8 +104,8 @@ textarea {
     resize: vertical;
 }
 
-.qr-code {
-    width: 150px;
+.imagem {
+    width: 500px;
 
 
 }
@@ -116,7 +117,9 @@ input[type="submit"] {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 10px;
 }
+
 
 input[type="submit"]:hover {
     background-color: #c9302c;
@@ -148,7 +151,7 @@ footer a {
     color: #fff;
 }
 
-footer ul {
+footer .lista {
     list-style: none;
     font-size: 20px;
 }
@@ -162,16 +165,24 @@ footer li {
     align-content: start;
 }
 
+.navegacao .lista, .sobre .lista {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
 .sobre {
     grid-row: span 1;
+
 }
+
 
 .social {
     grid-column: 2;
     grid-row: 2;
 }
 
-.social ul{
+.social .lista {
     grid-column: 2;
     align-content: start;
     display: flex;
