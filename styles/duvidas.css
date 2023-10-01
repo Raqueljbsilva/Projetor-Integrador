@@ -52,8 +52,10 @@ header a {
 
 main h1 {
     text-align: center;
-    margin-top: 16px;
-    margin-bottom: 32px;
+    background-color: #d9534f;
+    color: #fff;
+    padding: 20px;
+    margin-top: 0;
 }
 
 .perguntas {
@@ -61,6 +63,7 @@ main h1 {
     max-width: 1200px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -68,6 +71,46 @@ main h1 {
     grid-template-columns: 1fr;
     gap: 40px;
     
+}
+
+.perguntas button {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    font: 400 1.125rem/1.35 'Maven Pro', sans-serif;
+    font-weight: 600;
+}
+
+.perguntas button::after{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background: url(../imagens/seta-abrir.svg);
+    transition: 0.3s;
+}
+
+.perguntas button:hover::after,
+.perguntas button[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.perguntas dd {
+    display: none;
+}
+
+.perguntas dd.ativa {
+    display: block;
+}
+
+.perguntas dd {
+    padding-top: 16px;
 }
 
 /*FOOTER*/
