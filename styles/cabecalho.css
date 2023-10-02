@@ -1,0 +1,40 @@
+header {
+    background-color: rgb(250, 241, 247);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 1em;
+}
+
+header nav a img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    align-items: center;
+}
+
+.item {
+    margin-left: 2em;
+}
+
+ul li a:hover {
+    font-weight: 600;
+}
+
+a {
+    color: #BF1B2C;
+    text-decoration: none;
+}
