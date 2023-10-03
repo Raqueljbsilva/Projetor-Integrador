@@ -19,7 +19,7 @@ header nav a img {
     align-items: center;
 }
 
-ul {
+#lista-nav {
     display: flex;
     list-style: none;
     font-size: 20px;
@@ -30,7 +30,7 @@ ul {
     margin-left: 2em;
 }
 
-ul li a:hover {
+#lista-nav li a:hover {
     font-weight: 600;
 }
 
