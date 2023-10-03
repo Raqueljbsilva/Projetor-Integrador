@@ -5,6 +5,7 @@
     <!-- utf8 é um conjunto de caractere que suporta acentuação -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/duvidas.css">
     <!-- Nome do site -->
     <title>HemoBlog: Gotas de Vida</title>
@@ -13,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
+            <a href="../index.html"><img src="../assets/imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./Artigos_sbre_doação.html">Artigos</a></li>
@@ -28,7 +29,7 @@
         <div class="perguntas">
             <!-- pergunta + resposta -->
             <div class="pergunta">
-                <dt><button aria-controls="pergunta1" aria-expanded="true">O material para doar sangue é seguro?</button></dt>
+                <dt><button aria-controls="pergunta1" aria-expanded="false">O material para doar sangue é seguro?</button></dt>
                 <dd id="pergunta1">Sim. Os materiais utilizados são individuais, estéreis,
                     descartásveis e o doador não corre risco de contrair doenças na doação de sangue.
                 </dd>
@@ -102,9 +103,47 @@
                 <dt><button aria-controls="pergunta14"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
                 <dd id="pergunta14">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
             </div>
-
+            <div>
+                <a href="#modal" class="botao">Faça sua Pergunta</a>
+            </div>
         </div>
     </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h1>Faça sua pergunta</h1>
+            <p>Pergunte e responderemos via e-mail o mais rapido possivel.</p>
+            <form action="">
+                <div class="nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                </div>
+
+                <div class="sobrenome">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                </div>
+
+                <div class="email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+
+                <div class="texto-pergunta">
+                    <label for="texto-pergunta">Pergunta:</label>
+                    <textarea name="texto-pergunta" id="texto-pergunta" cols="30" rows="10" placeholder="Digite aqui sua duvida..."></textarea>
+                </div>
+            </form>
+
+            <div class="modal-footer">
+                <a href="#" class="modal-btn-enviar">Enviar Duvida</a>
+                <a href="#" class="modal-btn-close">Fechar</a>
+            </div>
+
+            <a href="#" class="modal-close">&times;</a>
+        </div>
+    </div>
+
     <!-- Rodapé -->
     <footer>
         <div class="container">
@@ -129,14 +168,14 @@
             <div class="social">
                 <h1>Redes Sociais</h1>
                 <ul>
-                    <li><a href="#"><img src="../imagens/social/icone-twitter.svg" alt="icone-twitter"></a></li>
-                    <li><a href="#"><img src="../imagens/social/icone-facebook.svg" alt="icone-facebook"></a></li>
-                    <li><a href="#"><img src="../imagens/social/icone-instagram.svg" alt="icone-instagram"></a></li>
+                    <li><a href="#"><img src="../assets/imagens/social/icone-twitter.svg" alt="icone-twitter"></a></li>
+                    <li><a href="#"><img src="../assets/imagens/social/icone-facebook.svg" alt="icone-facebook"></a></li>
+                    <li><a href="#"><img src="../assets/imagens/social/icone-instagram.svg" alt="icone-instagram"></a></li>
                 </ul>
             </div>
     
             <div class="qr-code">
-                <img src="../imagens/frame1.png" alt="qr-code">
+                <img src="../assets/imagens/frame1.png" alt="qr-code">
                 <h3>Compartilhe nosso site</h3>
             </div>
         </div>
