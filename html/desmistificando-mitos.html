@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HemoBlog: Gotas de Vida</title>
     <script src="https://kit.fontawesome.com/4fca10f768.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/cabecalho.css">
     <link rel="stylesheet" href="../styles/artigo-completo.css">
+    <link rel="stylesheet" href="../styles/rodape.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../imagens/LOGO - GOTAS DE VIDA.png" alt="Logo" width="15%"></a>
-            <ul>
-                <li><a href="../index.html"> Home</a></li>
-                <li><a href="./html/Artigos_sbre_doação.html">Artigos</a></li>
-                <li><a href="./html/PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
-                <li><a href="./html/Formularios_inscriçoes.html"> Registro</a></li>
+            <a href="../index.html"><img src="../assets/imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
+            <ul id="lista-nav">
+                <li class="item"><a href="../index.html">Home</a></li>
+                <li class="item"><a href="Artigos_sbre_doação.html">Artigos</a></li>
+                <li class="item"><a href="PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
+                <li class="item"><a href="Formularios_inscriçoes.html">Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -28,7 +31,7 @@
             <article id="artigo">
                 <h1 id="titulo">Desmistificando Mitos</h1>
 
-                <img src="../imagens/Desmistificando mitos.jpg" alt="Desmistificando mitos">
+                <img src="../assets/imagens/Desmistificando mitos.jpg" alt="Desmistificando mitos">
 
                 <i class="fa-regular fa-calendar-days"></i>
                 <time datetime="2023-09-01">01/09/2023</time>
@@ -104,21 +107,21 @@
                 <h3>Artigos mais lidos</h3>
 
                 <div>
-                    <img src="../imagens/Dicas para o dia da doação.jpg" alt="Dicas para o dia da doação" width="15%">
+                    <img src="../assets/imagens/Dicas para o dia da doação.jpg" alt="Dicas para o dia da doação" width="15%">
                     <a href="./dicas-doacao.html">
                         <h4>Dicas para o dia da doação</h4>
                     </a>
                 </div>
 
                 <div>
-                    <img src="../imagens/Tres coracoes.jpg" alt="Três corações" width="15%">
+                    <img src="../assets/imagens/Tres coracoes.jpg" alt="Três corações" width="15%">
                     <a href="./salva-tres-vidas.html">
                         <h4>Você sabe por que seu sangue salva três vidas?</h4>
                     </a>
                 </div>
 
                 <div>
-                    <img src="../imagens/Por que doar sangue.jpg" alt="Imagem sobre a Doação de Sangue" width="15%">
+                    <img src="../assets/imagens/Por que doar sangue.jpg" alt="Imagem sobre a Doação de Sangue" width="15%">
                     <a href="./porque-doar-sangue.html">
                         <h4>Por que doar Sangue?</h4>
                     </a>
@@ -132,35 +135,38 @@
     <footer>
         <div class="container">
             <div class="navegacao">
-                <h1>Navegação</h1>
-                <ul>
-                   <li><a href="../index.html">Home</a></li>
-                   <li><a href="./Artigos_sbre_doação.html">Artigos</a></li>
-                   <li><a href="./PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
-                   <li><a href="./Formularios_inscriçoes.html">Registro</a></li> 
+                <h1 class="titulo-rodape">Navegação</h1>
+                <ul class="lista-rodape">
+                    <li class="item-footer"><a href="../index.html">Home</a></li>
+                    <li class="item-footer"><a href="./Artigos_sbre_doação.html">Artigos</a></li>
+                    <li class="item-footer"><a href="./PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
+                    <li class="item-footer"><a href="./Formularios_inscriçoes.html">Registro</a></li>
                 </ul>
             </div>
-    
+
             <div class="sobre">
-                <h1>Sobre-nós</h1>
-                <ul>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Missão</a></li>
+                <h1 class="titulo-rodape">Sobre-nós</h1>
+                <ul class="lista-rodape">
+                    <li class="item-footer"><a href="#">Quem Somos</a></li>
+                    <li class="item-footer"><a href="#">Missão</a></li>
                 </ul>
             </div>
-    
+
             <div class="social">
-                <h1>Redes Sociais</h1>
-                <ul>
-                    <li><a href="#"><img src="../imagens/social/icone-twitter.svg" alt="icone-twitter"></a></li>
-                    <li><a href="#"><img src="../imagens/social/icone-facebook.svg" alt="icone-facebook"></a></li>
-                    <li><a href="#"><img src="../imagens/social/icone-instagram.svg" alt="icone-instagram"></a></li>
+                <h1 class="titulo-rodape">Redes Sociais</h1>
+                <ul class="lista-rodape">
+                    <li class="item-social"><a href="#"><img src="../assets/imagens/social/icone-twitter.svg"
+                                alt="icone-twitter"></a></li>
+                    <li class="item-social"><a href="#"><img src="../assets/imagens/social/icone-facebook.svg"
+                                alt="icone-facebook"></a></li>
+                    <li class="item-social"><a href="#"><img src="../assets/imagens/social/icone-instagram.svg"
+                                alt="icone-instagram"></a></li>
                 </ul>
             </div>
-    
+
             <div class="qr-code">
-                <img src="../imagens/frame1.png" alt="qr-code">
-                <h3>Compartilhe nosso site</h3>
+                <img src="../assets/imagens/frame1.png" alt="qr-code">
+                <h3 id="compartilhe">Compartilhe nosso site</h3>
             </div>
         </div>
         <div class="direitos">
