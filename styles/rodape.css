@@ -1,9 +1,7 @@
+/*FOOTER*/
 footer {
-    background-color: #BF1B2C;
+    background-color:#BF1B2C;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    z-index: 2;
-    width: 100%;
 }
 
 .container {
@@ -18,41 +16,30 @@ footer {
     gap: 16px;
 }
 
-.navegacao {
-    grid-row: span 2;
-    align-content: start;
-}
-
-.titulo-rodape,
-#compartilhe,
-footer a {
+footer h1 {
     color: #fff;
 }
 
-.lista-rodape {
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul {
     list-style: none;
     font-size: 20px;
 }
 
-.sobre {
-    grid-row: span 1;
-}
-
-.item-footer {
+footer li {
     margin-top: 8px;
 }
 
-.item-footer a{
-    text-decoration: none;
+.navegacao {
+    grid-row: span 2;
 }
 
-.navegacao,
-.navegacao .lista-rodape,
-.sobre,
-.sobre .lista-rodape {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+.sobre {
+    grid-row: span 1;
 }
 
 .social {
@@ -60,14 +47,14 @@ footer a {
     grid-row: 2;
 }
 
-.social .lista-rodape {
+.social ul{
     grid-column: 2;
     align-content: start;
     display: flex;
     gap: 24px;
 }
 
-.item-social {
+.social li {
     flex-wrap: wrap;
 }
 
@@ -80,6 +67,10 @@ footer a {
 
 .qr-code img {
     width: 40%;
+}
+
+.qr-code h3 {
+    color: #fff;
 }
 
 .direitos {

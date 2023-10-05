@@ -291,7 +291,6 @@ footer li {
 
 .navegacao {
     grid-row: span 2;
-    align-content: start;
 }
 
 .sobre {
