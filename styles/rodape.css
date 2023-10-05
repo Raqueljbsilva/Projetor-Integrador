@@ -1,6 +1,9 @@
 footer {
-    background-color:#BF1B2C;
+    background-color: #BF1B2C;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
 }
 
 .container {
@@ -20,7 +23,9 @@ footer {
     align-content: start;
 }
 
-.titulo-rodape, #compartilhe, footer a{
+.titulo-rodape,
+#compartilhe,
+footer a {
     color: #fff;
 }
 
@@ -37,7 +42,14 @@ footer {
     margin-top: 8px;
 }
 
-.navegacao, .navegacao .lista-rodape, .sobre, .sobre .lista-rodape{
+.item-footer a{
+    text-decoration: none;
+}
+
+.navegacao,
+.navegacao .lista-rodape,
+.sobre,
+.sobre .lista-rodape {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -48,7 +60,7 @@ footer {
     grid-row: 2;
 }
 
-.social .lista-rodape{
+.social .lista-rodape {
     grid-column: 2;
     align-content: start;
     display: flex;

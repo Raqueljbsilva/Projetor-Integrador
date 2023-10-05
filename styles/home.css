@@ -1,9 +1,29 @@
-.banner1 {
-    width: 100vw;
+.slider-container {
+    position: relative;
+    display: inline-block;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.btn {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #545454;
+}
+
+#prevBtn {
+    left: 20px;
+}
+
+#nextBtn {
+    right: 20px;
 }
 
 #artigos {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -140,30 +160,30 @@ hr {
     margin-right: 46%;
 }
 
-.registro{
+.registro {
     height: 87vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color:#545454;
+    color: #545454;
 }
 
-.registro div{
+.registro div {
     margin-left: 10%;
 }
 
-.registro div h2{
+.registro div h2 {
     margin-bottom: 2rem;
 }
 
-.registro div a{
+.registro div a {
     background-color: #BF1B2C;
     color: white;
     padding: 1rem;
     border-radius: 1.2rem;
 }
 
-.registro img{
+.registro img {
     width: 30%;
     margin-right: 10%;
 }
