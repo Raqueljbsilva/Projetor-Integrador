@@ -46,24 +46,10 @@
     text-align: center;
 }
 
-/* .slides-front {
-    color: #cd3636;
-    font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    flex-direction: inherit;
-    display: flex;
-    list-style: none;
-    font-size: 30px;
-    align-items: center;
-} */
-
 .slides-front {
     padding: 1px;
     width: 100%;
-    /*   width: 800px;*/
     height: 400px;
-    /* display: flex; */
-    /* margin: auto; */
     position: relative;
 }
 
@@ -142,11 +128,7 @@ input:checked+.slide-container .nav label {
 }
 
 .nav-dots {
-    /*  width: 100%; */
-    /* bottom: 100px; */
     display: flex;
-    /*  position: relative; */
-    /* text-align: justify; */
 }
 
 .nav-dots .nav-dot {

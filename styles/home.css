@@ -1,10 +1,5 @@
-.slider-container {
-    position: relative;
-    display: inline-block;
-}
-
 .slider img {
-    width: 100%;
+    width: 100vw;
 }
 
 .btn {
@@ -98,11 +93,12 @@ hr {
 .ver-todos {
     background-color: #BF1B2C;
     color: white;
+    padding: 1rem;
+    border-radius: 1.2rem;
     display: inline-block;
     margin: 0 auto;
     width: max-content;
     padding: 1rem;
-    border-radius: 2rem;
     cursor: pointer;
     margin-top: 2rem;
 }
