@@ -85,7 +85,9 @@ main h1 {
     text-align: left;
     font: 400 1.125rem/1.35 'Maven Pro', sans-serif;
     font-weight: 600;
-}
+    color:rgb(97, 93, 93);
+    
+ }
 
 .perguntas button::before {
     content: "";
