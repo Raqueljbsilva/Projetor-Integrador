@@ -9,11 +9,22 @@
     <link rel="stylesheet" href="../styles/cabecalho.css">
     <link rel="stylesheet" href="../styles/artigos.css">
     <link rel="stylesheet" href="../styles/rodape.css">
+    <script src="../js/Artigos.js" defer></script>
+    <script src="../js/libras.js"></script>
+
     <!-- Nome do site -->
     <title>HemoBlog: Gotas de Vida</title>
 </head>
 
 <body>
+
+    <div class="container">
+        <input type="checkbox" id="btn" name="btn">
+        <label for="btn"></label>
+        
+    </div>
+    
+
     <header>
         <nav>
             <a href="../index.html"><img src="../assets/imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
@@ -82,7 +93,6 @@
             </div>
         </section>
 
-
         <section class="div-slider">
             <section class="slides-front">
                 <input type="radio" name="radio-btn" id="img-1" checked="">
@@ -132,9 +142,40 @@
 
             </section>
             <div class="video">
-                <video controls>
+                <video id="v1" width="320" height="240" controls="controls" onended="vidplay(2)">
+                    <source src="../assets/Videos/VID-20230814-WA0032.mp4" type="video/mp4">
+                    <object data="" width="320" height="240">
+                    <embed width="320" height="240" src="Yes Bank Advertisment.mp4">
+                    </object>
+                    </video>
+                    
+                    <video id="v2" width="320" height="240" controls="controls" onended="vidplay(1)">
                     <source src="../assets/Videos/VID-20230814-WA0030.mp4" type="video/mp4">
-                </video>
+                    <object data="" width="320" height="240">
+                    <embed width="320" height="240" src="Yes Bank Advertisment.mp4">
+                    </object>
+                    </video>
+                    
+                    <script type="text/javascript">
+                    
+                    var video = document.getElementById("v1");
+                    video.play();
+                    
+                    function vidplay(i) {
+                    
+                      var video = document.getElementById("v"+i);
+                      if (video.paused) {
+                        video.play();
+                    
+                      } else {
+                        video.pause();
+                    
+                      }
+                    
+                    };
+                    
+                    </script>
+                            
             </div>
         </section>
     </main>
@@ -178,5 +219,15 @@
             <p>Todos os direitos reservados.</p>
         </div>
     </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new_window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 </body>
 </html>
