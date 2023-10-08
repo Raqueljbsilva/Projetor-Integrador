@@ -1,8 +1,11 @@
+
+
 .formulario {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 
 .titulo {
     text-align: center;
@@ -27,6 +30,10 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color:rgb(0, 0, 0);
+
+    
+                                        
 }
 
 input[type="text"],
@@ -66,4 +73,29 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #BF1B2C;
     font-size: 20px;
+}
+
+body.dark{
+    background-color: black;
+    color: white;
+    opacity:inherit;
+
+}
+
+label[for="btn"]{
+    background-color: rgb(157, 30, 30);
+    border-radius: 30px;
+    display: inline-block;
+    width: 30px;
+    right: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition:background 0.5s liner;
+
+}
+.dark.label1{
+    background-color: white;
+}
+input[type="checkbox"]{
+visibility: hidden;
 }
