@@ -1,55 +1,6 @@
-
-/*BODY*/
-
-.dark-mode { filter: invert(100%);
-
-}
-
-
-body.dark{
-    background-color: black;
-    color: white;
-    opacity:inherit;
-    color: transparent;
-    
-
-}
-
-.artigo.dark{
-    fill-opacity: inherit;
-}
-.contanier{
-    position: fixed;
-    top: 10px;
-    right: 10px;
-
-}
-
-label{
-    background-color: rgb(209, 33, 33);
-    border-radius: 30px;
-    display: inline-block;
-    width: 30px;
-    right: 30px;
-    cursor: pointer;
-    user-select: none;
-    transition:background 0.5s liner;
-    
-    
-}
-
-bady.dark label{
-    background-color: white;
-
-}
- input{
-    visibility: hidden;
- }
-
- .perguntas{
+.perguntas{
     color:#c03c3c;
- }
-
+}
 
 main h1 {
     text-align: center;
@@ -127,8 +78,9 @@ main h1 {
     background-color: #BF1B2C;
     color: white;
     padding: 1rem;
-    border-radius: 1.2rem;
+    border-radius: 4px;
     margin-bottom: 48px;
+    text-decoration: none;
 }
 
 /*MODAL*/
@@ -170,42 +122,42 @@ main h1 {
     gap:8px;
 }
 
-form label {
+.modal form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-form input,
-form textarea {
+.modal form input,
+.modal form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     resize: none;
 }
 
-form label,
-form input {
+.modal form label,
+.modal form input {
     display: block;
 }
 
-form .nome {
+.modal form .nome {
     grid-column: 1;
 }
 
-form .sobrenome {
+.modal form .sobrenome {
     grid-column: 2;
 }
 
-.nome input,
-.sobrenome input,
-.email input,
-.texto-pergunta textarea {
+.modal .nome input,
+.modal .sobrenome input,
+.modal .email input,
+.modal .texto-pergunta textarea {
     width: 100%;
 }
 
-form .email,
-form .texto-pergunta {
+.modal form .email,
+.modal form .texto-pergunta {
     grid-column: span 2;
 }
 
