@@ -67,7 +67,6 @@ showSlides();
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 
-
 //Renderização dinâmica dos artigos
 const conteudoHTML = [
   `<img class="imagem-artigo" src="./assets/imagens/Por que doar sangue.jpg"
