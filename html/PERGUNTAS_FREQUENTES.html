@@ -6,20 +6,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/cabecalho.css">
     <link rel="stylesheet" href="../styles/duvidas.css">
+    <link rel="stylesheet" href="../styles/rodape.css">
+    <script src="../js/Artigos.js" defer></script>
     <!-- Nome do site -->
     <title>HemoBlog: Gotas de Vida</title>
 </head>
 
 <body>
+ <div class="container">
+        <input type="checkbox" id="btn" name="btn">
+        <label for="btn"></label>
+        
+    </div>
     <header>
         <nav>
             <a href="../index.html"><img src="../assets/imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./Artigos_sbre_doação.html">Artigos</a></li>
-                <li><a href="./PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
-                <li><a href="./Formularios_inscriçoes.html">Registro</a></li>
+            <ul id="lista-nav">
+                <li class="item"><a href="../index.html">Home</a></li>
+                <li class="item"><a href="Artigos_sbre_doação.html">Artigos</a></li>
+                <li class="item"><a href="PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
+                <li class="item"><a href="Formularios_inscriçoes.html">Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -29,79 +37,87 @@
         <div class="perguntas">
             <!-- pergunta + resposta -->
             <div class="pergunta">
-                <dt><button aria-controls="pergunta1" aria-expanded="false">O material para doar sangue é seguro?</button></dt>
+                <dt><button aria-controls="pergunta1" aria-expanded="false">O material para doar sangue é
+                        seguro?</button></dt>
                 <dd id="pergunta1">Sim. Os materiais utilizados são individuais, estéreis,
                     descartásveis e o doador não corre risco de contrair doenças na doação de sangue.
                 </dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta2"  aria-expanded="false">Quem pode doar?</button></dt>
-                <dd id="pergunta2">Qualquer pessoa com idade entre 18 e 69 anos que pese mais de 50 quilos. Jovens de 16 ou 17 anos
+                <dt><button aria-controls="pergunta2" aria-expanded="false">Quem pode doar?</button></dt>
+                <dd id="pergunta2">Qualquer pessoa com idade entre 18 e 69 anos que pese mais de 50 quilos. Jovens de 16
+                    ou 17 anos
                     também estão aptos, desde que tenham o consentimento dos pais ou dos responsáveis.
                 </dd>
             </div>
 
             <div class="pergunta">
                 <dt><button aria-controls="pergunta3"  aria-expanded="false">O que é feito com o sangue que doamos?</button></dt>
-                <dd id="pergunta3">Passa por um processo de separação de hemocomponentes. Uma única bolsa se transforma em quatro: uma de hemácias,
+                <dd id="pergunta3">passa por um processo de separação de hemocomponentes. Uma única bolsa se transforma em quatro: uma de hemácias,
                     uma de plaquetas, uma de plasma e outra de crioprecipitado</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta4"  aria-expanded="false">Quanto tempo leva para o organismo repor o sangue doado?</button></dt>
-                <dd id="pergunta4">A reposição do volume de plasma ocorre em 24 horas e a dos glóbulos vermelhos em 4 semanas</dd>
+                <dt><button aria-controls="pergunta4" aria-expanded="false">Quanto tempo leva para o organismo repor o
+                        sangue doado?</button></dt>
+                <dd id="pergunta4">A reposição do volume de plasma ocorre em 24 horas e a dos glóbulos vermelhos em 4
+                    semanas</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta5"  aria-expanded="false">Quanto tempo demora?</button></dt>
-                <dd id="pergunta5">O procedimento todo (cadastro, aferição de sinais vitais, teste de anemia, triagem clínica,
+                <dt><button aria-controls="pergunta5" aria-expanded="false">Quanto tempo demora?</button></dt>
+                <dd id="pergunta5">O procedimento todo (cadastro, aferição de sinais vitais, teste de anemia, triagem
+                    clínica,
                     coleta do sangue e lanche) leva cerca de 40 minutos.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta6"  aria-expanded="false">O preocedimento oferece algum perigo?</button></dt>
-                <dd id="pergunta6">Não. A doação é totalmente segura e não apresenta nenhum risco. Os materiais utilizados, como a agulha e os cateteres, são descartáveis.</dd>
+                <dt><button aria-controls="pergunta6" aria-expanded="false">O preocedimento oferece algum
+                        perigo?</button></dt>
+                <dd id="pergunta6">Não. A doação é totalmente segura e não apresenta nenhum risco. Os materiais
+                    utilizados, como a agulha e os cateteres, são descartáveis.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta7"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
-                <dd id="pergunta7">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
-            </div>
-            
-            <div class="pergunta">
-                <dt><button aria-controls="pergunta8"  aria-expanded="false">Eu fiz uma cirurgia recentemente. Posso doar sangue?</button></dt>
-                <dd id="pergunta8">Você deve esperar 72 horas para doar sangue após uma extração dentária. Operações simples, como apendicite e retirada de varizes, pedem 3 meses. Procedimentos mais complexos, como a remoção da tireoide ou de um rim, meio ano. Caso você tenha passado por uma transfusão de sangue ou fez uma tatuagem, é importante aguardar por um ano.</dd>
+                <dt><button aria-controls="pergunta7" aria-expanded="false">Quanto sangue é retirado?</button></dt>
+                <dd id="pergunta7">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro
+                    pessoas.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta9"  aria-expanded="false">É necessário jejum para doar sangue?</button></dt>
-                <dd id="pergunta9">O candidato não pode estar em jejum! No entanto, ele não deve ter ingerido alimentos gordurosos (como “bacon”, ovos, feijoada, etc.) e após o almoço, aguardar pelo menos 3 horas para doação.</dd>
+                <dt><button aria-controls="pergunta8"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
+                <dd id="pergunta8">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta10"  aria-expanded="false">Qual o limite de doações de sangue?</button></dt>
-                <dd id="pergunta10">O intervalo mínimo entre doações é de 60 dias para homens e 90 dias para mulheres. É importante ressaltar que os homens podem doar no máximo 4 vezes em 12 meses e as mulheres 3 vezes nesse mesmo período. Para pessoas com mais de 60 anos, o intervalo mínimo entre as doações é de 6 meses.</dd>
+                <dt><button aria-controls="pergunta9"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
+                <dd id="pergunta9">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta11"  aria-expanded="false">E depois de doar sangue? Devo seguir alguma recomendação médica?</button></dt>
-                <dd id="pergunta11">Sim. Evite esforços físicos, beba bastante água, não fume por duas horas e evite ingerir álcool pelo resto do dia. Também é importante não praticar esportes radicais, como paraquedismo ou mergulho, ou dirigir veículos de grande porte.</dd>
+                <dt><button aria-controls="pergunta10"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
+                <dd id="pergunta10">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta12"  aria-expanded="false">Qual o período de inaptidão para quem foi considerado caso suspeito ou confirmado de covid-19 com apresentação de sintomas?</button></dt>
-                <dd id="pergunta12">O período de inaptidão é de 10 dias após a completa recuperação.</dd>
+                <dt><button aria-controls="pergunta11"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
+                <dd id="pergunta11">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta13"  aria-expanded="false">Quem tomou vacina recentemente pode doar sangue?</button></dt>
-                <dd id="pergunta13">Quem tomou a vacina da febre amarela deve aguardar 30 dias para fazer uma doação. Já para vacina contra gripe, o prazo é de 48 horas. No caso da vacina contra o novo coronavírus é preciso esperar 48 horas após a dose de Coronavac, e sete dias após a aplicação das demais.</dd>
+                <dt><button aria-controls="pergunta12"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
+                <dd id="pergunta12">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta14"  aria-expanded="false">Quem já teve hepatite pode doar sangue?</button></dt>
-                <dd id="pergunta14">Pessoas que tiveram hepatite viral após os 10 anos de idade não podem doar sangue. Os casos em que exista dúvida, o candidato deve procurar o Hemocentro mais próximo para avaliação do caso.</dd>
+                <dt><button aria-controls="pergunta13"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
+                <dd id="pergunta13">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
+            </div>
+
+            <div class="pergunta">
+                <dt><button aria-controls="pergunta14"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
+                <dd id="pergunta14">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
             </div>
             <div>
                 <a href="#modal" class="botao">Faça sua Pergunta</a>
@@ -131,7 +147,8 @@
 
                 <div class="texto-pergunta">
                     <label for="texto-pergunta">Pergunta:</label>
-                    <textarea name="texto-pergunta" id="texto-pergunta" cols="30" rows="10" placeholder="Digite aqui sua duvida..."></textarea>
+                    <textarea name="texto-pergunta" id="texto-pergunta" cols="30" rows="10"
+                        placeholder="Digite aqui sua duvida..."></textarea>
                 </div>
             </form>
 
@@ -148,35 +165,38 @@
     <footer>
         <div class="container">
             <div class="navegacao">
-                <h1>Navegação</h1>
-                <ul>
-                   <li><a href="../index.html">Home</a></li>
-                   <li><a href="./Artigos_sbre_doação.html">Artigos</a></li>
-                   <li><a href="./PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
-                   <li><a href="./Formularios_inscriçoes.html">Registro</a></li> 
+                <h1 class="titulo-rodape">Navegação</h1>
+                <ul class="lista-rodape">
+                    <li class="item-footer"><a href="../index.html">Home</a></li>
+                    <li class="item-footer"><a href="./Artigos_sbre_doação.html">Artigos</a></li>
+                    <li class="item-footer"><a href="./PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
+                    <li class="item-footer"><a href="./Formularios_inscriçoes.html">Registro</a></li>
                 </ul>
             </div>
-    
+
             <div class="sobre">
-                <h1>Sobre-nós</h1>
-                <ul>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Missão</a></li>
+                <h1 class="titulo-rodape">Sobre-nós</h1>
+                <ul class="lista-rodape">
+                    <li class="item-footer"><a href="#">Quem Somos</a></li>
+                    <li class="item-footer"><a href="#">Missão</a></li>
                 </ul>
             </div>
-    
+
             <div class="social">
-                <h1>Redes Sociais</h1>
-                <ul>
-                    <li><a href="#"><img src="../assets/imagens/social/icone-twitter.svg" alt="icone-twitter"></a></li>
-                    <li><a href="#"><img src="../assets/imagens/social/icone-facebook.svg" alt="icone-facebook"></a></li>
-                    <li><a href="#"><img src="../assets/imagens/social/icone-instagram.svg" alt="icone-instagram"></a></li>
+                <h1 class="titulo-rodape">Redes Sociais</h1>
+                <ul class="lista-rodape">
+                    <li class="item-social"><a href="#"><img src="../assets/imagens/social/icone-twitter.svg"
+                                alt="icone-twitter"></a></li>
+                    <li class="item-social"><a href="#"><img src="../assets/imagens/social/icone-facebook.svg"
+                                alt="icone-facebook"></a></li>
+                    <li class="item-social"><a href="#"><img src="../assets/imagens/social/icone-instagram.svg"
+                                alt="icone-instagram"></a></li>
                 </ul>
             </div>
-    
+
             <div class="qr-code">
                 <img src="../assets/imagens/frame1.png" alt="qr-code">
-                <h3>Compartilhe nosso site</h3>
+                <h3 id="compartilhe">Compartilhe nosso site</h3>
             </div>
         </div>
         <div class="direitos">

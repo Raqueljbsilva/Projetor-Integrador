@@ -5,100 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Doação de Sangue</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/cabecalho.css">
     <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="stylesheet" href="../styles/rodape.css">
+     <script src="../js/Artigos.js" defer></script>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 <body>
+     <div class="container">
+        <input type="checkbox" id="btn" name="btn">
+        <label for="btn"></label>
+        
+    </div>
 
     <header>
         <nav>
             <a href="../index.html"><img src="../assets/imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
-            <ul>
-                <li class="itens"><a href="../index.html"> Home</a></li>
-                <li class="itens"><a href="../html/Artigos_sbre_doação.html">Artigos</a></li>
-                <li class="itens"><a href="../html/PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
-                <li class="itens"><a href="../html/Formularios_inscriçoes.html"> Registro</a></li>
+            <ul id="lista-nav">
+                <li class="item"><a href="../index.html">Home</a></li>
+                <li class="item"><a href="Artigos_sbre_doação.html">Artigos</a></li>
+                <li class="item"><a href="PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
+                <li class="item"><a href="Formularios_inscriçoes.html">Registro</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <h1 class="titulo">Formulário de Doação de Sangue </h1>
         <div class="formulario">
-        <form action="processar_doacao.php" method="post">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required><br><br>
+            <form action="processar_doacao.php" method="post">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required><br><br>
 
-            <label for="telefone">
-                <i class="fas fa-phone"></i> Telefone:
-            </label>
-            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required><br><br>
+                <label for="telefone">
+                    <i class="fas fa-phone"></i> Telefone:
+                </label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required><br><br>
 
-            <label for="email">
-                <i class="fas fa-envelope"></i> E-mail:
-            </label>
-            <input type="email" id="email" name="email" placeholder="E-mail"><br><br>
+                <label for="email">
+                    <i class="fas fa-envelope"></i> E-mail:
+                </label>
+                <input type="email" id="email" name="email" placeholder="E-mail"><br><br>
 
-            <label for="data de nascimento">Data de Nascimento:</label>
-            <input type="date" required><br><br>
+                <label for="data de nascimento">Data de Nascimento:</label>
+                <input type="date" required><br><br>
 
-            <label for="Grupo_sanguineo">Grupo Sanguíneo:</label>
-            <select id="Grupo_sanguineo" name="Grupo_sanguineo" required>
-                <option value="A+">A+</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-            </select><br><br>
+                <label for="Grupo_sanguineo">Grupo Sanguíneo:</label>
+                <select id="Grupo_sanguineo" name="Grupo_sanguineo" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select><br><br>
 
-            <label for="endereco">
-                <i class="fas fa-map-marker-alt"></i> Endereço:
-            </label>
-            <input type="text" id="endereco" name="endereco" required><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-        <div>
-        <img src="../assets/imagens/imagen-registro.png" alt="imagem" class="imagem">
-    </div>
-</div>
+                <label for="endereco">
+                    <i class="fas fa-map-marker-alt"></i> Endereço:
+                </label>
+                <input type="text" id="endereco" name="endereco" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <div>
+                <img src="../assets/imagens/imagen-registro.png" alt="imagem" class="imagem">
+            </div>
+        </div>
     </main>
     <hr>
     <!-- Rodapé -->
     <footer>
         <div class="container">
             <div class="navegacao">
-                <h1>Navegação</h1>
-                <ul class="lista">
-                   <li><a href="/index.html">Home</a></li>
-                   <li><a href="/html/Artigos_sbre_doação.html">Artigo</a></li>
-                   <li><a href="/html/PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
-                   <li><a href="/html/Formularios_inscriçoes.html">Registro</a></li> 
+                <h1 class="titulo-rodape">Navegação</h1>
+                <ul class="lista-rodape">
+                    <li class="item-footer"><a href="../index.html">Home</a></li>
+                    <li class="item-footer"><a href="./Artigos_sbre_doação.html">Artigos</a></li>
+                    <li class="item-footer"><a href="./PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
+                    <li class="item-footer"><a href="./Formularios_inscriçoes.html">Registro</a></li>
                 </ul>
             </div>
-    
+
             <div class="sobre">
-                <h1>Sobre-nós</h1>
-                <ul class="lista">
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Missão</a></li>
+                <h1 class="titulo-rodape">Sobre-nós</h1>
+                <ul class="lista-rodape">
+                    <li class="item-footer"><a href="#">Quem Somos</a></li>
+                    <li class="item-footer"><a href="#">Missão</a></li>
                 </ul>
             </div>
-    
+
             <div class="social">
-                <h1>Redes Sociais</h1>
-                <ul class="lista">
-                    <li><a href="#"><img src="../assets/imagens/social/icone-twitter.svg" alt="icone-twitter"></a></li>
-                    <li><a href="#"><img src="../assets/imagens/social/icone-facebook.svg" alt="icone-facebook"></a></li>
-                    <li><a href="#"><img src="../assets/imagens/social/icone-instagram.svg" alt="icone-instagram"></a></li>
+                <h1 class="titulo-rodape">Redes Sociais</h1>
+                <ul class="lista-rodape">
+                    <li class="item-social"><a href="#"><img src="../assets/imagens/social/icone-twitter.svg"
+                                alt="icone-twitter"></a></li>
+                    <li class="item-social"><a href="#"><img src="../assets/imagens/social/icone-facebook.svg"
+                                alt="icone-facebook"></a></li>
+                    <li class="item-social"><a href="#"><img src="../assets/imagens/social/icone-instagram.svg"
+                                alt="icone-instagram"></a></li>
                 </ul>
             </div>
-    
-            <div class="qr-code2">
+
+            <div class="qr-code">
                 <img src="../assets/imagens/frame1.png" alt="qr-code">
-                <h3>Compartilhe nosso site</h3>
+                <h3 id="compartilhe">Compartilhe nosso site</h3>
             </div>
         </div>
         <div class="direitos">
