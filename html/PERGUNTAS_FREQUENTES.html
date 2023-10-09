@@ -9,17 +9,12 @@
     <link rel="stylesheet" href="../styles/cabecalho.css">
     <link rel="stylesheet" href="../styles/duvidas.css">
     <link rel="stylesheet" href="../styles/rodape.css">
-    <script src="../js/Artigos.js" defer></script>
     <!-- Nome do site -->
     <title>HemoBlog: Gotas de Vida</title>
 </head>
 
 <body>
- <div class="container">
-        <input type="checkbox" id="btn" name="btn">
-        <label for="btn"></label>
-        
-    </div>
+   
     <header>
         <nav>
             <a href="../index.html"><img src="../assets/imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
@@ -138,10 +133,11 @@
         <div class="modal-content">
             <h1>Faça sua pergunta</h1>
             <p>Pergunte e responderemos via e-mail o mais rapido possivel.</p>
-            <form action="">
+            <form id="formularioPergunta" action="">
                 <div class="nome">
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome" placeholder="Nome">
+                    <p id="nome-helper" class="helper-text">Preencha pelo menos 5 caracteres!</p>
                 </div>
 
                 <div class="sobrenome">
@@ -152,12 +148,14 @@
                 <div class="email">
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" placeholder="E-mail">
+                    <p id="email-helper" class="helper-text">Por favor digite um email válido!</p>
                 </div>
 
                 <div class="texto-pergunta">
                     <label for="texto-pergunta">Pergunta:</label>
                     <textarea name="texto-pergunta" id="texto-pergunta" cols="30" rows="10"
                         placeholder="Digite aqui sua duvida..."></textarea>
+                    <p id="texto-pergunta-helper" class="helper-text">Faça uma pergunta explícita!</p>
                 </div>
             </form>
 
