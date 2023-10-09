@@ -1,0 +1,12 @@
+.dark-mode { 
+    filter: invert(100%);
+}
+
+body.dark{
+    background-color: black;
+    opacity:inherit;
+}
+
+.artigo.dark{
+    fill-opacity: inherit;
+}

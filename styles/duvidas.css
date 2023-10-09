@@ -1,5 +1,6 @@
-.perguntas {
-    color: #c03c3c;
+/*GERAL*/
+.perguntas{
+    color:#c03c3c;
 }
 
 main h1 {
@@ -36,7 +37,9 @@ main h1 {
     text-align: left;
     font: 400 1.125rem/1.35 'Maven Pro', sans-serif;
     font-weight: 600;
-}
+    color:rgb(97, 93, 93);
+    
+ }
 
 .perguntas button::before {
     content: "";
@@ -78,6 +81,7 @@ main h1 {
     padding: 1rem;
     border-radius: 1.2rem;
     margin-bottom: 48px;
+    text-decoration: none;
 }
 
 /*MODAL*/
@@ -119,42 +123,42 @@ main h1 {
     gap: 8px;
 }
 
-form label {
+.modal form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-form input,
-form textarea {
+.modal form input,
+.modal form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     resize: none;
 }
 
-form label,
-form input {
+.modal form label,
+.modal form input {
     display: block;
 }
 
-form .nome {
+.modal form .nome {
     grid-column: 1;
 }
 
-form .sobrenome {
+.modal form .sobrenome {
     grid-column: 2;
 }
 
-.nome input,
-.sobrenome input,
-.email input,
-.texto-pergunta textarea {
+.modal .nome input,
+.modal .sobrenome input,
+.modal .email input,
+.modal .texto-pergunta textarea {
     width: 100%;
 }
 
-form .email,
-form .texto-pergunta {
+.modal form .email,
+.modal form .texto-pergunta {
     grid-column: span 2;
 }
 
@@ -182,22 +186,22 @@ form .texto-pergunta {
 
 .modal-btn-enviar {
     width: 150px;
-    padding: 10px;
+    padding: 1rem;
     text-decoration: none;
     background-color: #BF1B2C;
     color: #fff;
-    border-radius: 4px;
+    border-radius: 1.2rem;
     display: inline-block;
     text-align: center;
 }
 
 .modal-btn-close {
     width: 150px;
-    padding: 10px;
+    padding: 1rem;
     text-decoration: none;
     background-color: #bfbfbf;
     color: #000000;
-    border-radius: 4px;
+    border-radius: 1.2rem;
     display: inline-block;
     text-align: center;
 }

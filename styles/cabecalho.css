@@ -34,7 +34,8 @@ header nav a img {
     font-weight: 600;
 }
 
-a {
+header a,
+header label {
     color: #BF1B2C;
     text-decoration: none;
 }

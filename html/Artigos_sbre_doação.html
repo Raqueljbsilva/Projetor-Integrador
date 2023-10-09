@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../styles/cabecalho.css">
     <link rel="stylesheet" href="../styles/artigos.css">
     <link rel="stylesheet" href="../styles/rodape.css">
-    <script src="../js/Artigos.js" defer></script>
+    <link rel="stylesheet" href="../styles/modo-dark.css">
+    <script src="../js/Artigos_doaçao.js" defer></script>
     <script src="../js/libras.js"></script>
 
     <!-- Nome do site -->
@@ -17,14 +18,6 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <input type="checkbox" id="btn" name="btn">
-        <label for="btn"></label>
-        
-    </div>
-    
-
     <header>
         <nav>
             <a href="../index.html"><img src="../assets/imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
@@ -33,13 +26,28 @@
                 <li class="item"><a href="Artigos_sbre_doação.html">Artigos</a></li>
                 <li class="item"><a href="PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
                 <li class="item"><a href="Formularios_inscriçoes.html">Registro</a></li>
+                <li class="item">
+                    <input type="checkbox" id="btn" name="btn">
+                    <label for="btn">Modo Escuro</label>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <img class="banner1" src="../assets/imagens/Corpo/Sem título.jpg" alt="imagem principal">
 
+        <div class="slider-container">
+            <div class="slider">
+                
+                <img src="../assets/imagens/IMG_1.jpg" alt="Imagem sobre a Doação de Sangue">
+                <img src="../assets/imagens/IMG_2.jpeg" alt="Imagem sobre a Doação de Sangue">
+                <img src="../assets/imagens/IMG_3.jpg" alt="Imagem sobre a Doação de Sangue">
+                <img src="../assets/imagens/IMG_4.jpg" alt="Imagem sobre a Doação de Sangue">
+            </div>
+            <i class="fa-solid fa-chevron-left btn" id="prevBtn"></i>
+            <i class="fa-solid fa-chevron-right btn" id="nextBtn"></i>
+        </div>
+       
         <section class="artigos">
             <div class="artigo">
                 <li><a href="https://calendar.google.com/calendar/u/0/r?pli=1"> Calendario </a></li>

@@ -5,10 +5,13 @@
     <!-- utf8 é um conjunto de caractere que suporta acentuação -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/cabecalho.css">
     <link rel="stylesheet" href="../styles/duvidas.css">
     <link rel="stylesheet" href="../styles/rodape.css">
+    <link rel="stylesheet" href="../styles/modo-dark.css">
+    <script src="../js/Artigos.js" defer></script>
     <!-- Nome do site -->
     <title>HemoBlog: Gotas de Vida</title>
 </head>
@@ -23,9 +26,24 @@
                 <li class="item"><a href="Artigos_sbre_doação.html">Artigos</a></li>
                 <li class="item"><a href="PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
                 <li class="item"><a href="Formularios_inscriçoes.html">Registro</a></li>
+                <li class="item">
+                    <input type="checkbox" id="btn" name="btn">
+                    <label for="btn">Modo Escuro</label>
+                </li>
             </ul>
         </nav>
     </header>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
     <main>
         <h1>Perguntas Frequentes</h1>
@@ -48,10 +66,8 @@
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta3" aria-expanded="false">O que é feito com o sangue que
-                        doamos?</button></dt>
-                <dd id="pergunta3">passa por um processo de separação de hemocomponentes. Uma única bolsa se transforma
-                    em quatro: uma de hemácias,
+                <dt><button aria-controls="pergunta3"  aria-expanded="false">O que é feito com o sangue que doamos?</button></dt>
+                <dd id="pergunta3">passa por um processo de separação de hemocomponentes. Uma única bolsa se transforma em quatro: uma de hemácias,
                     uma de plaquetas, uma de plasma e outra de crioprecipitado</dd>
             </div>
 
@@ -65,64 +81,55 @@
             <div class="pergunta">
                 <dt><button aria-controls="pergunta5" aria-expanded="false">Quanto tempo demora?</button></dt>
                 <dd id="pergunta5">O procedimento todo (cadastro, aferição de sinais vitais, teste de anemia, triagem
-                    clínica,
-                    coleta do sangue e lanche) leva cerca de 40 minutos.</dd>
+                    clínica, coleta do sangue e lanche) leva cerca de 40 minutos.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta6" aria-expanded="false">O preocedimento oferece algum
-                        perigo?</button></dt>
+                <dt><button aria-controls="pergunta6" aria-expanded="false">O procedimento oferece algum perigo?</button></dt>
                 <dd id="pergunta6">Não. A doação é totalmente segura e não apresenta nenhum risco. Os materiais
                     utilizados, como a agulha e os cateteres, são descartáveis.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta7" aria-expanded="false">Quanto sangue é retirado?</button></dt>
-                <dd id="pergunta7">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro
-                    pessoas.</dd>
+                <dt><button aria-controls="pergunta7" aria-expanded="false">É necessário jejum para doar sangue?</button></dt>
+                <dd id="pergunta7">O candidato não pode estar em jejum! No entanto, ele não deve ter ingerido alimentos gordurosos (como “bacon”, ovos, feijoada, etc.) e após o almoço, aguardar pelo menos 3 horas para doação.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta8" aria-expanded="false">Quanto sangue é retirado?</button></dt>
-                <dd id="pergunta8">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro
-                    pessoas.</dd>
+                <dt><button aria-controls="pergunta8"  aria-expanded="false">Quais as doenças que impedem a doação de sangue?</button></dt>
+                <dd id="pergunta8">Existe um grande número de doenças que podem impedir a doação de sangue, seja porque a doação nesse caso pode prejudicar o doador, seja porque a doação pode prejudicar o paciente que receberia esse sangue. Para verificar se uma determinada doença impede a doação, é importante que o candidato passe pela triagem de doadores, quando será orientado sobre sua situação específica.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta9" aria-expanded="false">Quanto sangue é retirado?</button></dt>
-                <dd id="pergunta9">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro
-                    pessoas.</dd>
+                <dt><button aria-controls="pergunta9"  aria-expanded="false">Depois de quanto tempo as pessoas que fizeram piercing, tatuagem, maquiagem definitiva ou micropigmentação (sobrancelhas, lábios, etc.) podem doar sangue?</button></dt>
+                <dd id="pergunta9">Tatuagem, maquiagem definitiva e micropigmentação: após 12 meses do procedimento; se feitas em estabelecimento adequado (seguro) e com todos os cuidados necessários (assepsia correta e material descartável), o prazo é de 6 meses. Piercing: se feito em estabelecimento sem condições de avaliar a antissepsia: aguardar 12 meses após realização; com material descartável e feito em estabelecimento apropriado: aguardar 6 meses após realização; se feito na mucosa oral ou genital: inapto enquanto estiver com o piercing e apto após 12 meses da retirada.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta10" aria-expanded="false">Quanto sangue é retirado?</button></dt>
-                <dd id="pergunta10">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro
-                    pessoas.</dd>
+                <dt><button aria-controls="pergunta10"  aria-expanded="false">O doador de sangue tem direito à folga no trabalho?</button></dt>
+                <dd id="pergunta10">Sim, o doador tem direito a um (01) dia de folga no trabalho em cada 12 meses trabalhados, desde que a doação esteja devidamente comprovada, de acordo com os termos previstos no Decreto-Lei nº 5.452, de 1º de maio de 1943 (Consolidação das Leis do Trabalho).</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta11" aria-expanded="false">Quanto sangue é retirado?</button></dt>
-                <dd id="pergunta11">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro
-                    pessoas.</dd>
+                <dt><button aria-controls="pergunta11"  aria-expanded="false">Eu já contraí Covid-19, posso doar sangue mesmo assim?</button></dt>
+                <dd id="pergunta11">Sim, pode doar após 30 dias do desaparecimento dos sintomas.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta12" aria-expanded="false">Quanto sangue é retirado?</button></dt>
-                <dd id="pergunta12">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro
-                    pessoas.</dd>
+                <dt><button aria-controls="pergunta12"  aria-expanded="false">É realizado algum exame no sangue do doador?</button></dt>
+                <dd id="pergunta12">Sim. Tipagem sanguínea, sorologia para hepatites B e C, doença de chagas, sífilis, HIV (vírus da Aids) e HTLV.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta13" aria-expanded="false">Quanto sangue é retirado?</button></dt>
-                <dd id="pergunta13">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro
-                    pessoas.</dd>
+                <dt><button aria-controls="pergunta13"  aria-expanded="false">Quanto sangue é retirado?</button></dt>
+                <dd id="pergunta13">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro pessoas.</dd>
             </div>
 
             <div class="pergunta">
-                <dt><button aria-controls="pergunta14" aria-expanded="false">Quanto sangue é retirado?</button></dt>
-                <dd id="pergunta14">Em média, são coletados 450 mililitros. Esse volume pode salvar a vida de até quatro
-                    pessoas.</dd>
+                <dt><button aria-controls="pergunta14"  aria-expanded="false">Com que frequencia posso doar?</button></dt>
+                <dd id="pergunta14">O intervalo mínimo entre doações é de 60 dias para homens e 90 dias para mulheres. É importante ressaltar que os homens podem doar no máximo 4 vezes em 12 meses e as mulheres 3 vezes nesse mesmo período. Para pessoas com mais de 60 anos, o intervalo mínimo entre as doações é de 6 meses.</dd>
             </div>
+
             <div>
                 <a href="#modal" class="botao">Faça sua Pergunta</a>
             </div>

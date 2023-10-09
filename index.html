@@ -6,35 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HemoBlog: Gotas de Vida</title>
+
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/cabecalho.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/rodape.css">
+    <link rel="stylesheet" href="./styles/modo-dark.css">
+
     <script src="https://kit.fontawesome.com/4fca10f768.js" crossorigin="anonymous"></script>
-     <script src="./js/Artigos.js"defer></script>
+    <script src="./js/Artigos.js"defer></script>
 </head>
 
 
 <body>
     
-    <div class="container">
-        <input type="checkbox" id="btn" name="btn">
-        <label for="btn"></label>
-        
-    </div>
-
-    <!-- Cabeçalho -->
     <header>
         <nav>
-            <a href="./index.html"><img src="./assets/imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
+            <a href="./index.html"><img src="../assets/imagens/LOGO - GOTAS DE VIDA.png" alt="Logo"></a>
             <ul id="lista-nav">
                 <li class="item"><a href="./index.html">Home</a></li>
                 <li class="item"><a href="./html/Artigos_sbre_doação.html">Artigos</a></li>
                 <li class="item"><a href="./html/PERGUNTAS_FREQUENTES.html">Dúvidas</a></li>
-                <li class="item"><a href="./html/Formularios_inscriçoes.html"> Registro</a></li>
+                <li class="item"><a href="./html/Formularios_inscriçoes.html">Registro</a></li>
+                <li class="item">
+                    <input type="checkbox" id="btn" name="btn">
+                    <label for="btn">Modo Escuro</label>
+                </li>
             </ul>
         </nav>
     </header>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
     <main>
 
@@ -85,7 +96,7 @@
 
         <section class="registro">
             <div>
-                <h2>Quer ser um doador de sangue</h2>
+                <h2>Quer ser um doador de sangue?</h2>
                 <a href="./html/Formularios_inscriçoes.html">Formulário de Registro</a>
             </div>
             <img src="./assets/imagens/imagen-registro.png" alt="">
