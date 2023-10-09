@@ -55,16 +55,17 @@ textarea {
     width: 500px;
 }
 
-input[type="submit"] {
+.enviar {
     background-color: #BF1B2C;
     color: white;
     padding: 1rem 2rem;
     border-radius: 1.2rem;
     font-size: 18px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-input[type="submit"]:hover {
+.enviar:hover {
     background-color: #BF1B2C;
     font-size: 20px;
 }

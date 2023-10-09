@@ -55,7 +55,7 @@ function showAlert(message) {
     setTimeout(() => {
         alertBox.classList.remove('custom-alert-show');
         setTimeout(() => {
-        document.body.removeChild(alertBox);
+            document.body.removeChild(alertBox);
         }, 300);
     }, 3000);
 }
@@ -66,36 +66,34 @@ function showAlertAndCloseModal(message) {
 }
 
 function validationForm(input, helper) {
-    console.log("pasó por aqui")
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const modal = document.getElementById('modal');
-    document.querySelector('.modal-btn-enviar').href ='#modal'
 
+    document.querySelector('.modal-btn-enviar').href = '#modal'
     document.querySelector('.modal-btn-enviar').addEventListener('click', function (event) {
         showAlert('Você deve preencher os campos obrigatórios para enviar sua pergunta.');
     })
 
     input.addEventListener("input", (evento) => {
         const value = evento.target.value;
-        console.log(value)
         if ((input === inputs[0] && value.length >= 5) ||
             (input === inputs[1] && emailRegex.test(value)) ||
             (input === inputs[2] && value.length >= 30)) {
             correct(input);
             helper.classList.remove("visible");
-           
+
             if (inputs[0].value.length >= 5 &&
                 emailRegex.test(inputs[1].value) &&
                 inputs[2].value.length >= 30) {
-                    document.querySelector('.modal-btn-enviar').href ='#'
+                document.querySelector('.modal-btn-enviar').href = '#'
                 document.querySelector('.modal-btn-enviar').addEventListener('click', function (event) {
                     inputs.forEach(element => {
                         element.classList.remove("correct")
                         element.value = null;
                         document.querySelector('.modal-btn-enviar').addEventListener('click', function (event) {
                             showAlert('Você deve preencher os campos obrigatórios para enviar sua pergunta.');
-                            document.querySelector('.modal-btn-enviar').href ='#modal'   
-                        })                                      
+                            document.querySelector('.modal-btn-enviar').href = '#modal'
+                        })
                     });
                     showAlertAndCloseModal('Sua pergunta foi enviada com sucesso, em breve você receberá uma resposta por e-mail');
                 })
@@ -104,15 +102,15 @@ function validationForm(input, helper) {
         else {
             error(input);
             helper.classList.add("visible")
-            document.querySelector('.modal-btn-enviar').href ='#modal'
+            document.querySelector('.modal-btn-enviar').href = '#modal'
             document.querySelector('.modal-btn-enviar').addEventListener('click', function (event) {
                 if (inputs[0].value === '' ||
                     inputs[1].value === '' ||
                     inputs[2].value === '') {
-                    showAlert('Você deve preencher os campos obrigatórios para enviar sua pergunta.');         
+                    showAlert('Você deve preencher os campos obrigatórios para enviar sua pergunta.');
                 }
                 else {
-                    showAlert('É necessário preencher os campos corretamente para enviar sua pergunta');           
+                    showAlert('É necessário preencher os campos corretamente para enviar sua pergunta');
                 }
             })
             document.querySelector('.modal-btn-close').addEventListener('click', function (event) {

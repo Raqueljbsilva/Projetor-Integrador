@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/cabecalho.css">
     <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="stylesheet" href="../styles/validacao-formularios.css">
     <link rel="stylesheet" href="../styles/rodape.css">
     <link rel="stylesheet" href="../styles/modo-dark.css">
     
@@ -47,25 +48,30 @@
     <main>
         <h1 class="titulo">Formulário de Doação de Sangue </h1>
         <div class="formulario">
-            <form action="processar_doacao.php" method="post">
+            <form action="processar_doacao.php" method="post" id="form-cadastro">
                 <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required><br><br>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo"><br><br>
+                <p id="nome-helper" class="helper-text">
+                    Digite seu nome completo e sem números!</p>
 
                 <label for="telefone">
                     <i class="fas fa-phone"></i> Telefone:
                 </label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required><br><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone"><br><br>
+                <p id="telefone-helper" class="helper-text">Por favor digite um telefone válido!</p>
 
                 <label for="email">
                     <i class="fas fa-envelope"></i> E-mail:
                 </label>
                 <input type="email" id="email" name="email" placeholder="E-mail"><br><br>
+                <p id="email-helper" class="helper-text">Por favor digite um email válido!</p>
 
-                <label for="data de nascimento">Data de Nascimento:</label>
-                <input type="date" required><br><br>
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento">
 
                 <label for="Grupo_sanguineo">Grupo Sanguíneo:</label>
-                <select id="Grupo_sanguineo" name="Grupo_sanguineo" required>
+                <select id="Grupo_sanguineo" name="Grupo_sanguineo">
+                    <option value="" selected disabled>Selecione</option>
                     <option value="A+">A+</option>
                     <option value="A-">A-</option>
                     <option value="B+">B+</option>
@@ -79,8 +85,9 @@
                 <label for="endereco">
                     <i class="fas fa-map-marker-alt"></i> Endereço:
                 </label>
-                <input type="text" id="endereco" name="endereco" required><br><br>
-                <input type="submit" value="Enviar">
+                <input type="text" id="endereco" name="endereco"><br><br>
+                <p id="endereco-helper" class="helper-text">Por Favor insira um endereço válido!</p>
+                <a href="#" id="enviar" class="enviar">Enviar</a>
             </form>
             <div>
                 <img src="../assets/imagens/imagen-registro.png" alt="imagem" class="imagem">
@@ -130,6 +137,7 @@
             <p>Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="../js/cadastro.js"></script>
 </body>
 
 </html>
