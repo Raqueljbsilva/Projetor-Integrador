@@ -1,6 +1,8 @@
-.banner1 {
+.slider img {
+    width: 100vw; 
     height: 30vw;
     width: 99vw;
+    border-radius: 40px;
 }
  
 .artigos {
@@ -184,5 +186,5 @@ input:checked+.slide-container .nav label {
     height: 400px;
     margin-bottom: 20px;
     position: sticky;
-    ;
+    
 }
