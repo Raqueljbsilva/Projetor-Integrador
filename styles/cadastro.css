@@ -35,6 +35,7 @@ input[type="number"],
 select,
 input[type="tel"],
 input[type="email"],
+input[type="date"],
 textarea {
     width: 100%;
     padding: 10px;

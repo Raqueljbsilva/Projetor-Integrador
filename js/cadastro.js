@@ -69,7 +69,7 @@ function validationForm(input, helper) {
             helper.classList.remove("visible");
             document.getElementById("enviar").addEventListener('click', function () {
                 input.classList.remove("correct")
-                showAlert('Seu cadastro foi concluído com sucesso, em breve entraremos em contato para indicar os hemocentros de sua cidade!');
+                showAlert('Seu cadastro foi concluído com sucesso, em breve entraremos em contato');
                 document.getElementById('form-cadastro').reset();
             })
         }
